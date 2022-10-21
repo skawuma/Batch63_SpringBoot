@@ -10,8 +10,8 @@ import com.cogent.boot.controller.BookController;
 public class Lab13JpaCrudApplication {
 
 	public static void main(String[] args) {
-		ApplicationContext ctx= SpringApplication.run(Lab13JpaCrudApplication.class, args);
-		BookController bookController= ctx.getBean(BookController.class);
+		ApplicationContext cx= SpringApplication.run(Lab13JpaCrudApplication.class, args);
+		BookController bookController= cx.getBean(BookController.class);
 		bookController.manageBook();
 	}
 
