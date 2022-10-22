@@ -17,10 +17,8 @@ import com.cogent.ElectManag.repo.PurchaseRepository;
 @RestController
 @RequestMapping("/api/purchase")
 public class PurchaseController {
-
 	@Autowired
 	PurchaseRepository purchaseRepository;
-	
 	@PostMapping("/addpurchase")
 	Purchase newPurchase(@RequestBody Purchase purchase) {		
 		return purchaseRepository.save(purchase);
