@@ -8,6 +8,6 @@ import org.springframework.stereotype.Component;
 public class Car {
 	public void letsGo()
 	{
-		System.out.println("Going too fast to DownTown");
+		System.out.println("Going to DownTown");
 	}
 }
