@@ -7,3 +7,4 @@ import com.cogent.ElectManag.entity.Purchase;
 public interface PurchaseRepository  extends JpaRepository<Purchase,Long>{
 
 }
+

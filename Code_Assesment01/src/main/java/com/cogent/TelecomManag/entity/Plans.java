@@ -25,6 +25,7 @@ public class Plans {
 		Validity = validity;
 	}
 
+	
 	public Plans() {
 		super();
 		// TODO Auto-generated constructor stub

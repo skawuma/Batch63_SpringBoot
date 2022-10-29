@@ -18,7 +18,7 @@ public class Complain {
 	private String description;
 	
 
-	public long getComplainId() {
+public long getComplainId() {
 		return complainId;
 	}
 

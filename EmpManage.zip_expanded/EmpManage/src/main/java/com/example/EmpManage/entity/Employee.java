@@ -1,18 +1,24 @@
 package com.example.EmpManage.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 
 @Entity
  @Table(name="Employee_tbl")
 public class Employee {
      @Id
      @GeneratedValue(strategy = GenerationType.AUTO)
-	int id;
+     @Column(name = "EmployeeID")
+     int id;
+     @NotBlank(message = "Employee name cannot be blank")
 	String name;
+     @Size(min=2 ,max=10)
 	String dept;
 	float salary;
 	public Employee(int id, String name, String dept, float salary) {
