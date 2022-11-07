@@ -38,7 +38,7 @@ Payroll newPayroll(@RequestBody Payroll payroll) {
 		return payrollRepository.findAll();
 	}
 		
-		@DeleteMapping("/deletepayroll/{id}")
+		@DeleteMapping("/deletepayroll/{payId}")
 		public String deletePayroll(@PathVariable("payId") long payId) {
 			try {
 			payrollRepository.deleteById(payId);

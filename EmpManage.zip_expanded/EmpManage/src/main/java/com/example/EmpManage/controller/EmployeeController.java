@@ -76,7 +76,7 @@ public class EmployeeController {
 			return " UNABLE TO DELETE ID, PLEASE TRY AGAIN";
 		}
 	}
-
+/**
 	@DeleteMapping("/deleteemployee/{name}")
 	public String deleteName(@PathVariable("iname") String name) {
 		try {
@@ -87,6 +87,8 @@ public class EmployeeController {
 			return " UNABLE TO DELETE ID, PLEASE TRY AGAIN";
 		}
 	}
+	
+	**/
 }
 
 
